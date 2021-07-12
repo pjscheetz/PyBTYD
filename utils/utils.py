@@ -8,7 +8,7 @@ import calendar
 
 
 def load_cdnow():
-    data = pd.read_csv('src/data/CDNOW_master.txt', delim_whitespace=True, header=None)
+    data = pd.read_csv('utils/data/CDNOW_master.txt', delim_whitespace=True, header=None)
     data.columns = ['cid', 'date', 'count', 'sales']
     return data
 
